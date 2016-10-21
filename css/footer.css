@@ -1,0 +1,435 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+hr{
+  border: 0;
+height: 1px;
+background: #E7E7E7;
+
+}
+footer{
+  max-width: 1300px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin: 0 auto;
+  /*border: 1px solid #E7E7E7;*/
+}
+footer div.links-and-care{
+  width: 100%;
+  background-color: white;
+  /*border-top: 1px solid #E7E7E7;*/
+  float: left;
+  height: 340px;
+}
+
+footer div.question-phone{
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #E7E7E7;
+  float: left;
+  height: 110px;
+
+}
+div.links-and-care,
+div.question-phone,
+div.question,
+div.phone,
+div.privacy,
+div.copyright,
+section.customer-care{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer div.question{
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #E7E7E7;
+  float: left;
+  background-color: white;
+  padding-top: 25px;
+  padding-left: 0;
+}
+footer div.phone{
+  width: 50%;
+  height: 100%;
+  border: 0;
+  float: left;
+  background-color: white;
+  padding-top: 25px;
+}
+
+footer div.privacy{
+  width: 100%;
+  border-top: 1px solid #E7E7E7;
+  float: left;
+  background-color: white;
+  height: 65px;
+  padding-top: 25px;
+}
+
+footer div.copyright{
+  width: 100%;
+  height: 70px;
+  border-top: 1px solid #E7E7E7;
+  padding-top: 20px;
+  float: left;
+  background-color: white;
+}
+
+/*content*/
+section.customer-care,
+section.quick-links{
+  width: 50%;
+  float: left;
+
+}
+.questions-sec{
+
+}
+section.privacy-networks ul,
+section.customer-care ul,
+section.quick-links ul{
+  list-style: none;
+}
+
+section.privacy-networks ul li{
+  float: left;
+}
+p.deliver{
+  display: none;
+}
+/*______________________________________________________________________________*/
+section.quick-links > h4.title,
+section.customer-care > h4.title,
+section.questions-sec > h4.title,
+section.order-phone > h4.title,
+select.rights > span,
+select.rights > p.share,
+section.privacy-networks ul li,
+section.rights > span,
+section.share > p,
+p.tweet > span,
+section.privacy-networks > ul li {
+   font-family: "Open Sans";
+   font-weight: normal;
+   font-size: 12.5px;
+ }
+ section.share  span{
+   background-color: #CACACA;
+       margin-left: 5px;
+ }
+ section.privacy-networks > ul li{
+   font-size: 10px;
+ }
+ section.quick-links,
+ section.customer-care{
+   padding-top: 35px;
+ }
+ section.customer-care ul,
+ section.quick-links ul{
+   margin-top: 30px;
+ }
+ section.customer-care ul li,
+ section.quick-links ul li{
+   font-family: "Roboto light";
+   font-size: 12px;
+   margin-bottom: 20px;
+ }
+section.questions-sec p.tweet,
+section.order-phone span{
+  font-family: "Roboto light";
+  font-size: 12px;
+  margin-top: 8px;
+  display: block;
+
+}
+section.privacy-networks ul{
+  display: flex;
+  flex-direction: row;
+}
+section.privacy-networks ul li{
+  margin-right: 16px;
+  width: 33.33%;
+  height: auto;
+  margin-right: -30px;
+}
+
+section.rights{
+  float: left;
+}
+section.share p,
+section.rights span{
+  font-size: 10.5px;
+}
+section.share p span{
+  font-family: "Roboto light";
+}
+section.share{
+  float: right;
+}
+
+/*social*/
+section.social{
+  position: absolute;
+
+  margin-left: 100px;
+margin-top: 68px;
+}
+section.social ul{
+  list-style: none;
+
+}
+section.social ul li{
+  float: left;
+
+}
+section.social ul li:first-child{
+  margin-right: 28px;
+}
+/*________________*/
+@media screen and (min-width: 480px){
+  div.links-and-care,
+  div.question-phone,
+  div.question,
+  div.phone,
+  div.privacy,
+  section.customer-care,
+  div.copyright{
+
+    border-left: 0;
+    border-right: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  footer div.links-and-care{
+    width: 60%;
+    height: 425px;
+    border-right: 0;
+    border-bottom: 0;
+    padding-top: 15px;
+
+  }
+  footer div.question-phone{
+    /*border-top: 1px solid #E7E7E7;*/
+    width: 40%;
+    height: 425px;
+    /*border: 0;*/
+  }
+  footer div.question{
+    width: 100%;
+    height: 28%;
+    border: 0;
+    padding: 0;
+
+  }
+  footer div.phone{
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  section.questions-sec p.tweet,
+  section.order-phone span{
+    margin-top: 20px;
+  }
+  section.questions-sec{
+    padding-top: 50px;
+  }
+
+section.order-phone{
+
+}
+
+  section.order-phone > span{}
+  footer div.phone{
+    width: 100%;
+    height: 50%;
+    border: 0;
+  }
+  footer div.privacy{
+    width: 40%;
+    height: 80px;
+    border-right: 0;
+    float: right;
+    border-bottom: 0;
+  }
+  footer div.copyright{
+    width: 60%;
+    height: 80px;
+    float: left;
+    border-left: 0;
+
+  }
+  section.customer-care ul,
+  section.quick-links ul {
+    margin-top: 40px;
+}
+section.customer-care ul li,
+section.quick-links ul li{
+  margin-bottom: 25px;
+}
+footer div.privacy{
+  padding-left: 0;
+  padding-top: 30px;
+}
+section.privacy-networks ul{
+  padding-left: 20px;
+}
+section.privacy-networks ul li{
+  margin-right: 30px;
+}
+section.share p,
+ section.rights span {
+    font-size: 12.5px;
+}
+  section.share,
+ section.rights{
+   padding-top: 10px;
+}
+section.social{
+  position: absolute;
+
+  margin-left: 0;
+margin-top: 85px;
+}
+section.social ul{
+  list-style: none;
+
+}
+section.social ul li{
+  float: left;
+
+}
+section.social ul li:first-child{
+  margin-right: 28px;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+  footer{
+    max-width: 1300px;
+    width: 100%;
+  }
+  /*div.container-footer{
+    width: 1300px;
+    margin: 0 auto;
+  }*/
+  div.links-and-care,
+  div.question-phone,
+  div.question,
+  div.phone,
+  div.privacy,
+  section.customer-care,
+  div.copyright{
+    /*max-width: 1180px;*/
+    /*width: 100%;*/
+    border-left: 0;
+    border-right: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  footer div.links-and-care{
+    width: 50%;
+    height: 450px;
+    /*border-top: 1px solid #E7E7E7;*/
+    border-right: 1px solid #E7E7E7;
+  }
+
+  footer div.question-phone{
+    width: 50%;
+    height: 450px;
+    border: 0;
+  }
+  footer div.question{
+    width: 50%;
+    height: 100%;
+    border-right: 0;
+    /*border-left: 1px solid #E7E7E7;*/
+  }
+  p.deliver{
+    display: block;
+    margin-top: 74px;
+    font-family: "Crimson";
+    font-style: italic;
+    position: absolute;
+    line-height: 30px;
+  }
+  footer div.phone{
+    width: 50%;
+    height: 100%;
+    border-left: 0;
+    /*border-top: 1px solid #E7E7E7;*/
+    padding-top: 50px;
+  }
+  footer div.privacy{
+    width: 44%;
+  }
+  footer div.copyright{
+    width: 56%;
+  }
+  footer div.privacy,
+  footer div.copyright{
+    height: 80px;
+  }
+  section.customer-care{
+    padding-left: 0;
+  }
+  footer div.question{
+    border:0;
+  }
+  section.privacy-networks ul {
+    padding-left: 220px;
+  }
+    section.privacy-networks ul li{
+    font-size: 12px;
+    margin-right: 43px;
+  }
+  section.social{
+    position: absolute;
+
+    margin-left: -267px;
+  margin-top: 200px;
+  }
+  section.quick-links > h4.title, section.customer-care > h4.title{
+      font-family: "Open Sans";
+      font-weight: normal;
+      font-size: 16px;
+  }
+section.quick-links, section.customer-care {
+    padding-top: 40px;
+}
+section.quick-links ul {
+    margin-top: 42px;
+}
+section.quick-links ul li,
+section.customer-care ul li {
+    margin-bottom: 19px;
+    font-size: 15px;
+}
+
+section.questions-sec > h4.title,
+section.order-phone > h4.title{
+  font-size: 17px;
+}
+
+p.tweet{
+  margin-top: 12px;
+  font-size: 13px;
+}
+p.tweet > span{
+
+}
+p.deliver {
+  margin-top: 65px;
+}
+}
+a.foter_link{
+  text-decoration: none;
+  color: black;
+}
+a.foter_link:hover{
+  color: #EE4A57;
+}

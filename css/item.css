@@ -1,0 +1,450 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+div.mod{
+  width: 100%;
+  height: 500%;
+  /*opacity: 0.5;*/
+  position: absolute;
+  z-index: 10;
+  /*background-color: black;*/
+  display: none;
+}
+div.massege{
+  width: 50%;
+  height: 550px;
+  background-color: white;
+  opacity: 1;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 90%;
+}
+div.massege > button{
+  display: block;
+margin: 0 auto;
+width: 150px;
+height: 100px;
+opacity: 1;
+cursor: pointer;
+position: relative;
+top: 45%;
+}
+p.alert{
+  /*background-color: rebeccapurple;*/
+width: 50%;
+margin: 0 auto;
+position: relative;
+top: 35%;
+}
+body{
+  background-color: white;
+}
+a.item-link{
+  color: black;
+  text-decoration: none;
+}
+a.item-link:hover{
+  color: #F14A58;
+
+}
+article.name-page{
+
+  width: 100%;
+  background-color: white;
+  height: 55px;
+  margin: 0 auto;
+  padding-left: 20px;
+  border-top: 1px solid #E8E8E8;
+  border-bottom:  1px solid #E8E8E8;
+}
+article.name-page > a{
+  display: block;
+  max-width: 1180px;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans";
+  margin: 0 auto;
+  height: 13px;
+  font-size: 12px;
+  word-spacing: 2px;
+  padding-top: 16px;
+}
+
+section.view-item{
+  display: flex;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex-direction: column;
+}
+div.general-pic{
+  width: 80% !important;
+}
+div.general-pic,
+div.main-pic{
+    width: 100%;
+    height: auto;
+    margin-bottom: 17px;
+    margin: 0 auto;
+}
+ img.itm-mob{
+  width: 100%;
+  height: auto;
+}
+div.exampls,
+div.variants{
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: -3px;
+  /*width: 100%;*/
+  overflow: hidden;
+}
+
+div.modal{
+  display: none;
+  width: 350px;
+  height: 150px;
+  background-color: green;
+  border: 1px solid black;
+  z-index: 22;
+  position: relative;
+  margin: 0 auto;
+  top: 100px;
+}
+
+
+div.col-mob{
+  display: block;
+  float: left;
+  width: 33.33%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.caption{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+
+
+}
+
+[class*='col-'] {
+  margin-right: 11px;
+}
+[class*='col-']:last-child{
+  margin-right: -22px;
+}
+img.itm-desc{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+article.info{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*position: relative;*/
+}
+h3{
+  font-weight: normal;
+  font-family: "Roboto";
+  /*background-color: red;*/
+  text-align: center;
+  font-size: 20px;
+  word-spacing: 4px;
+  padding-top: 25px;
+
+}
+span.price{
+  display: block;
+  text-align: center;
+  font-family: "Roboto charact";
+  font-size: 14px;
+  padding-top: 23px;
+}
+p.details{
+  text-align: center;
+  font-family: "Crimson";
+  font-style: italic;
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 30px;
+}
+form.chose-and-add{
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+fieldset{
+  border: 0;
+
+
+}
+legend{
+  width: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-family: "Roboto charact";
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding-top: 17px;
+}
+input[type="radio"]{
+    display:none;
+}
+
+
+label.check-option-btn{
+  display: block;
+  width: 145px;
+  height: 60px;
+  float: left;
+  border: 1px solid #E8E8E8;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  margin-top: 25px;
+  font-family: "Roboto menu";
+font-size: 18px;
+}
+div.sizes{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*background-color: pink;*/
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+div.colors{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*background-color: pink;*/
+  justify-content: space-between;
+  margin: 0 auto;
+}
+label.check-option-btn:hover{
+  transition: 0.5s;
+  background-color: #707070;
+}
+
+input[type="radio"]:checked + label
+{
+    background-color: #707070;
+}button.add-to-bag{
+
+  display: block;
+  outline: none;
+  width: 218px;
+  height: 60px;
+  border: 1px solid #E8E8E8;
+  background-color: white;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 75px;
+  font-family: "Roboto menu";
+  font-size: 17px;
+  font-weight: normal;
+  padding-right: 40px;
+  word-spacing: 5px;
+  margin-bottom: 100px;
+}
+button.add-to-bag:hover{
+  transition: 0.5s;
+  background-color: #707070;
+}
+picture{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+picture source,
+picture img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section.banner{
+
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+a.levis,
+a.bag{
+  display: none;
+}
+a.adidas{
+  display: block;
+}
+a.adidas > img,
+a.levis > img,
+a.bag > img{
+  width: 100%;
+  height: auto;
+  border-top:  1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+a.adidas{
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width:480px) {
+  div.sizes{
+  }
+  article.name-page {
+    height: 65px;
+    padding-left: 60px;
+  }
+  article.name-page > a {
+    font-size: 15px;
+    word-spacing: 4px;
+    padding-top: 18px;
+  }
+  section.view-item{
+    flex-direction: row;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+  }
+
+  picture{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  picture source,
+  picture img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  div.exampls{
+    margin-top: 0;
+    width: 10%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  div.variants{
+    margin-top: 0;
+    width: 24%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  div.general-pic{
+    width: 35% !important;
+  }
+  div.main-pic{
+    width: 90%;
+
+  }
+  div.col-mob{
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 22px;
+  }
+  h3{
+    font-size: 26px;
+    padding-top: 56px;
+  }
+  span.price {
+    font-size: 17px;
+    padding-top: 19px;
+  }
+  p.details > br{
+    display: none;
+  }
+  p.details {
+    padding-top: 14px;
+    font-size: 17px;
+    width: 51%;
+    margin: 0 auto;
+  }
+  legend{
+    font-size: 22px;
+    padding-top: 46px;
+
+  }
+  div.sizes{
+
+    width: 44%;
+  }
+  label.check-option-btn{
+    height: 75px;
+    line-height: 67px;
+    font-size: 24px;
+  }
+  div.colors{
+    width: 28%;
+  }
+  button.add-to-bag {
+    width: 335px;
+    height: 74px;
+    margin-top: 161px;
+    font-family: "Roboto menu";
+    font-size: 25px;
+    padding-right: 0px;
+    margin-bottom: 160px;
+  }
+  a.levis{
+    display: block;
+  }
+  a.bag{
+    display: block;
+    width: 25%;
+    height: auto;
+  }
+  a.adidas{
+    width: 50%;
+  }
+  a.levis{
+    width: 24.9%;
+  }
+}
+footer{
+  margin-top: -5px !important;
+}

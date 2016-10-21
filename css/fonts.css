@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/Open Sans/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Roboto light";
+  src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+}
+@font-face{
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: "Roboto menu";
+  src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+@font-face{
+  font-family: "Open Sans Light";
+  src: url('../fonts/Open Sans/OpenSans-Light.ttf') format('truetype');
+}
+@font-face{
+  font-family: "Crimson";
+  src: url('../fonts/Crimson/CrimsonText-Roman.ttf') format('truetype');
+}
+@font-face{
+  font-family: "Roboto charact";
+  src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}

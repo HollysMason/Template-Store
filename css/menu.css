@@ -1,0 +1,361 @@
+header{
+  max-width: 1180px;
+  width: 100%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 70px;
+  padding: 0;
+}
+h1.temp-desktop{
+  display: none;
+  float: left;
+  font-family: "Roboto";
+  font-size: 26px;
+  padding-top: 25px;
+  letter-spacing: 2px;
+}
+h1.temp-mobile{
+  display: block;
+  float: left;
+  font-family: "Roboto";
+  font-size: 22px;
+  padding-left: 18px;
+  padding-top: 18px;
+  letter-spacing: 2px;
+}
+ul.headerMenu{
+  list-style-type: none;
+}
+ul.headerMenu li{
+  float: left;
+  font-family: "Roboto";
+  font-size: 13px;
+}
+ul.headerMenu li > img{
+  padding-right: 15px;
+  display: none;
+  float: left;
+}
+ul.headerMenu li.Email{
+  padding-right: 1px;
+  display: none;
+}
+ul.headerMenu li.signUp{
+  padding-right: 54px;
+  display: none;
+}
+ul.headerMenu li.bag{
+  padding-left: 55px;
+  line-height: 65px;
+}
+button.toggle-menu{
+  display: block;
+  width: 55px;
+  height: 70px;
+  outline: none;
+  float: right;
+  background-color: white;
+  border-left: 2px solid grey;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+span.bar{
+  display: block;
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: black;
+  margin: 3px;
+  margin-top: 1px;
+  margin-left: 15px;
+}
+.display-menu{
+  display: block !important;
+  position: absolute;
+  z-index: 5;
+}
+span.close{
+  display: none;
+  margin-top: -5px;
+  margin-right: 3px;
+  font-size: 30px;
+  color: #F14A58;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+nav{
+  /*max-width: 1180px;*/
+  width: 91%;
+  height: 60px;
+  bottom: 0;
+  padding-top: 70px;
+}
+ul.main-menu{
+  width: 100%;
+  display: none;
+  background-color: white;
+  padding-left: 20px;
+}
+nav ul.main-menu li{
+  list-style-type: none;
+  display: block;
+  /*background-color: red;*/
+}
+nav ul.main-menu li.search,
+nav ul.main-menu li a{
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto menu";
+  display: block;
+  padding-top: 23px;
+  font-size: 28px;
+  display: block;
+  margin-right: 20px;
+}
+nav ul.main-menu li a:hover{
+  color: #F14A58;
+}
+nav ul.main-menu li.search{
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
+nav ul.main-menu li.search > input.search-descktop{
+  width: 170px;
+  height: 43px;
+  outline: none;
+  border: 0;
+  font-family: "Open Sans Light";
+  font-size: 12px;
+  padding-top: 12px;
+  font-weight: bold;
+  background-image: url("../img/searchMobile.png");
+  background-repeat: no-repeat;
+  background-position:bottom;
+}
+{
+
+}
+nav ul.main-menu li a.Accessories{
+  padding-top: 20px;
+}
+nav ul.main-menu li a.Sale{
+  padding-top: 20px;
+}
+
+nav ul.main-menu li.search > input.search-tablet{
+  display: none;
+  margin-top: 20px;
+}
+
+@media screen and (min-width:480px) {
+  header{
+      padding-left: 40px;
+      padding-right: 40px;
+      height: 120px;
+  }
+  h1.temp-desktop{
+    display: block;
+  }
+  h1.temp-mobile{
+    display: none;
+  }
+  ul.headerMenu{
+    float: right;
+    margin-top: 5px;
+  }
+  ul.headerMenu li{
+    line-height: 65px;
+  }
+  ul.headerMenu li > img{
+    padding-top: 25px;
+  }
+  ul.headerMenu li > img,
+  ul.headerMenu li.Email,
+  ul.headerMenu li.signUp{
+    display: block;
+  }
+  ul.headerMenu li.bag{padding-left: 0;}
+  button.toggle-menu{
+    display: none;
+  }
+
+
+
+  nav ul.main-menu li a,
+  nav ul.main-menu li a.Sale,
+  nav ul.main-menu li a.Accessories{
+
+  }
+  nav{
+    padding-top: 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+
+
+  nav{
+    /*max-width: 1180px;*/
+    /*width: 91%;
+    height: 60px;
+    bottom: 0;
+    padding-top: 70px;*/
+  }
+  ul.main-menu{
+    width: 100%;
+    display: none;
+    background-color: white;
+    padding-left: 20px;
+  }
+  nav ul.main-menu li{
+    list-style-type: none;
+    display: block;
+    /*background-color: red;*/
+  }
+  nav ul.main-menu li.search,
+  nav ul.main-menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto menu";
+    display: block;
+    padding-top: 23px;
+    font-size: 28px;
+    display: block;
+    margin-right: 20px;
+  }
+  nav ul.main-menu li a:hover{
+    color: #F14A58;
+  }
+  nav ul.main-menu li.search{
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
+  nav ul.main-menu li.search > input.search-descktop{
+    width: 170px;
+    height: 43px;
+    outline: none;
+    border: 0;
+    font-family: "Open Sans Light";
+    font-size: 12px;
+    padding-top: 12px;
+    font-weight: bold;
+    background-image: url("../img/searchMobile.png");
+    background-repeat: no-repeat;
+    background-position:bottom;
+  }
+
+
+
+
+
+  /*nav ul.main-menu{
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    padding: 0;
+    justify-content: flex-start;;
+  }
+  nav ul.main-menu li{
+    display: block;
+    position: relative;
+      line-height: 50px;
+      width: auto;;
+    border: 1px solid black;
+  }
+  nav ul.main-menu li.search > input.search-descktop{
+    display: none;
+  }
+  nav ul.main-menu li.search > input.search-tablet{
+    display: block;
+    margin-left: 10px;
+  }
+  nav ul.main-menu li.search{
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 3%;
+  }
+  nav ul.main-menu li a{
+    font-size: 10px;
+  }
+  nav ul.main-menu li a.Men{
+    margin-left: -15px;
+  }
+  nav ul.main-menu li a.Handbags{
+    margin-left: -47px;
+  }
+  nav ul.main-menu li a.Accessories{
+    margin-left: -42px;
+  }
+  nav ul.main-menu li a.Sale{
+    margin-left: -30px;
+  }
+  nav ul.main-menu li a.New-Arrivals{
+    margin-left: -60px;
+  }
+  nav ul.main-menu li a.Clearance{
+    margin-left: -35px;
+  }
+  nav ul.main-menu li a.StoreLocator{
+    margin-left: -34px;
+  }*/
+}
+@media screen and (min-width:600px) {
+  nav ul.main-menu li a{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width:1024px) {
+  header{
+    /*padding-left: 60px;
+    padding-right: 60px;*/
+  }
+  nav ul.main-menu li.search > input.search-tablet{
+    display: none;
+  }
+  nav ul.main-menu li.search > input.search-descktop{
+    display: block;
+    width: 120px;
+    background-image: url("../img/search.png");
+    background-repeat: no-repeat;
+    background-position:bottom;
+
+  }
+    nav ul.main-menu{
+      max-width: 1180px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    nav ul.main-menu li{
+      border: 1px solid black;
+      /*width: 12.5;*/
+    }
+  nav ul.main-menu li a.Men{
+    /*margin-left: -34px;*/
+  }
+  nav ul.main-menu li a.Handbags{
+    /*margin-left: -85px;*/
+  }
+  nav ul.main-menu li a.Accessories{
+    /*margin-left: -100px;*/
+  }
+  nav ul.main-menu li a.Sale{
+    /*margin-left: -106px;*/
+  }
+  nav ul.main-menu li a.New-Arrivals{
+    /*margin-left: -157px;*/
+  }
+  nav ul.main-menu li a.Clearance{
+    /*margin-left: -155px;*/
+  }
+  nav ul.main-menu li a.StoreLocator{
+    /*margin-left: -172px;*/
+  }
+
+}

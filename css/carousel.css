@@ -1,0 +1,72 @@
+section.carousel{
+  width: 100%;
+  overflow: hidden;
+}
+section.slides{
+  width: 300%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+picture img{
+  width: 100%;
+  height: auto;
+}
+a.slide{
+  width: 33.33%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+nav.navaig-carusel{
+  border-bottom: 1px solid #CACACA;
+border-top: 1px solid #AEB5B8;
+margin-top: -15.5%;
+list-style: none;
+height: 55px;
+position: relative;
+}
+.nowShown{
+  background-color: #F14A58 !important;
+}
+nav.navaig-carusel ul{
+  margin: 0 auto;
+  list-style: none;
+  width: 115px;
+  margin-top: 5.8%;
+  margin-bottom: 6%;}
+nav.navaig-carusel ul li{
+  width: 6px;
+  height: 6px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: #CACACA;
+  float: left;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+nav.navaig-carusel ul li:hover{
+  background-color: #F14A58;
+}
+@media screen and (min-width:480px){
+  nav.navaig-carusel {
+    margin-top: -9%;
+    height: 65px;
+  }
+  nav.navaig-carusel ul{
+    margin-top: 3.5%;
+  }
+
+}
+@media screen and (min-width:1024px){
+  nav.navaig-carusel {
+    margin-top: -6.44%;
+    height: 80px;
+  }
+  nav.navaig-carusel ul{
+    margin-top: 2.5%;
+  }
+
+}

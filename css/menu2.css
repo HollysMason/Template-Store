@@ -1,0 +1,453 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header{
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+span.current-count-price{
+  margin-left: 5px;
+}
+span.current-count-price,
+span.count-items{
+  font-family: "Roboto light";
+  font-weight: bold;
+}
+div.main-header{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  display: flex;
+}
+a.temp-desktop{
+  color: black;
+  text-decoration: none;
+  display: none;
+  float: left;
+  font-family: "Roboto";
+  font-size: 26px;
+  padding-top: 25px;
+  letter-spacing: 2px;
+}
+a.temp-mobile{
+  color: black;
+  text-decoration: none;
+  float: left;
+  font-family: "Roboto";
+  font-size: 22px;
+  padding-left: 18px;
+  padding-top: 18px;
+  letter-spacing: 2px;
+}
+ul.headerMenu a{
+  color: black;
+  text-decoration: none;
+  transition: 0.4s color ease;
+}
+ul.headerMenu a:hover{
+  color: #F14A58;
+}
+ul.headerMenu{
+  display: block;
+  list-style: none;
+  font-family: "Roboto";
+  font-size: 13px;
+  height: 100%;
+  width: 100%;
+}
+ul.headerMenu li{
+  margin-left: 56px;
+  padding-top: 25px;
+}
+ul.headerMenu li.Email,
+li.signUp,
+img.bag-icon{
+  display: none;
+}
+button.toggle-menu{
+  display: block;
+  width: 75px;
+  height: 100%;
+  outline: none;
+  float: right;
+  background-color: white;
+  border-left: 1px solid #CACACA;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+span.bar{
+  display: block;
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: black;
+  margin: 3px;
+  margin-top: 1px;
+  margin-left: 15px;
+}
+.display-menu{
+  display: block !important;
+}
+span.close{
+  display: none;
+  margin-top: -5px;
+  margin-right: 3px;
+  font-size: 30px;
+  color: #F14A58;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+li.search{
+ margin-top: 37px;
+ padding-bottom: 50px;
+}
+li.search > input.search{
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #E5E5E5;
+  color: #A8A8A8;
+  font-family: "Roboto light";
+  font-weight: bold;
+  font-size: 11.4px;
+  word-spacing: 3px;
+  width: 155px;
+  height: 32px;
+  float: left;
+}
+li.search > input.search:hover{
+  border-bottom: 2px solid #F14A58;
+}
+li.search > input.button-search{
+  background-image: url("../img/search/searchDesk.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  float: left;
+  width: 20px;
+  height: 32px;
+  background-color: white;
+  border: 0;
+  border-bottom: 2px solid #E5E5E5;
+}
+nav.main-menu{
+  background-color: white;
+  display: none;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+}
+nav.main-menu ul{
+  padding-left: 20px;
+  list-style: none;
+}
+nav.main-menu ul li{
+  padding-top: 22px;
+}
+nav.main-menu ul li a{
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto menu";
+  font-size: 28px;
+  transition: 0.5s color ease;
+}
+nav.main-menu ul li a:hover{
+  color: #F14A58;
+}
+
+@media screen and (min-width:480px) {
+  header{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  a.temp-desktop{
+    display: block;
+  }
+  a.temp-mobile{
+    display: none;
+  }
+  button.toggle-menu{
+    display: none;
+  }
+  li.search{
+   margin-top: 37px;
+   padding-bottom: 25px;
+  }
+  ::-webkit-input-placeholder {
+  /*color: pink;*/
+  /*visibility: hidden;*/
+  color: transparent;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+      color: transparent;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: transparent;
+  }
+  li.search > input.search{
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #F14A58;
+
+    color: #A8A8A8;
+    font-family: "Roboto light";
+    font-weight: bold;
+    font-size: 11.4px;
+    word-spacing: 3px;
+    width: 0px;
+    height: 20px;
+  }
+  li.search > input.button-search{
+    background-image: url("../img/search/searchDesk.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    float: left;
+    width: 20px;
+    height: 15px;
+    background-color: white;
+    border: 0;
+
+  }
+
+  nav.main-menu ul li:last-child {
+    margin-left: 1%;
+    padding-top: 8px;
+}
+
+  nav.main-menu{
+    position: relative;
+  }
+  div.main-header{
+    justify-content: space-between;
+  }
+
+  ul.headerMenu{
+    display: block;
+    float: right;
+    font-family: "Roboto light";
+    font-size: 13px;
+    height: auto;;
+    width: auto;
+
+    margin-right: 0 auto;
+    padding-top: 28px;
+  }
+  ul.headerMenu li{
+    float: left;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+  ul.headerMenu li {
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+  ul.headerMenu li.Email,
+  li.signUp,
+  img.bag-icon{
+    display: block;;
+  }
+  img.bag-icon{
+    float: left;
+    padding-top: 3px;
+    margin-right: 14px;
+    }
+  li.signUp{
+    margin-right: 55px;
+  }
+  li.Email{
+    margin-right: 3px;
+  }
+  nav.main-menu{
+    width: 100%;
+    height: 50px;
+    display: block !important;
+  }
+  nav.main-menu ul{
+    max-width: 1180px;
+    width: 100%;
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+  }
+  nav.main-menu ul li{
+    padding-top: 0px;
+    display: block;
+    float: left;
+    width: auto;
+    height: 100%;
+    padding-top: 8px;
+  }
+  nav.main-menu ul li:last-child{
+    margin-left: 0%;
+    padding-top: 12px;
+  }
+   li.search{
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+  nav.main-menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto menu";
+    font-size: 14px;
+  }
+  nav.main-menu ul li a:hover{
+    color: #F14A58;
+  }
+
+}
+
+
+@media screen and (min-width:1024px) {
+  header{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  h1.temp-desktop{
+    display: block;
+  }
+  h1.temp-mobile{
+    display: none;
+  }
+    button.toggle-menu{
+    display: none;
+  }
+  li.search{
+   margin-top: 0px;
+   padding-bottom: 0px;
+  }
+
+  li.search{
+   margin-top: 37px;
+   padding-bottom: 25px;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+
+  color: #A8A8A8;;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+      color: #A8A8A8;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #A8A8A8;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #A8A8A8;
+  }
+  li.search > input.search{
+    outline: none;
+  border: 0;
+  border-bottom: 2px solid #E5E5E5;
+
+  color: #A8A8A8;
+  font-family: "Roboto light";
+  font-weight: bold;
+  font-size: 11.4px;
+  word-spacing: 3px;
+  width: 100px;
+  height: 37px;
+
+  }
+  li.search > input.button-search{
+    height: 37px;
+    border-bottom: 2px solid #E5E5E5;
+    cursor: pointer;
+  }
+  /*nav.main-menu ul li:last-child {
+    margin-left: 1%;
+    padding-top: 8px;
+  }*/
+  nav.main-menu ul li:last-child{
+    margin-left: 6.7%;
+    padding-top: 0px;
+  }
+
+  div.main-header{
+    justify-content: space-between;
+  }
+
+  ul.headerMenu{
+    display: block;
+    float: right;
+    font-family: "Roboto light";
+    font-size: 13px;
+    height: auto;;
+    width: auto;
+
+    margin-right: 0 auto;
+    padding-top: 28px;
+  }
+  ul.headerMenu li{
+    float: left;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+  ul.headerMenu li {
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+  ul.headerMenu li.Email,
+  li.signUp,
+  img.bag-icon{
+    display: block;;
+  }
+  img.bag-icon{
+    float: left;
+    padding-top: 3px;
+    margin-right: 14px;
+    }
+  li.signUp{
+    margin-right: 55px;
+  }
+  li.Email{
+    margin-right: 3px;
+  }
+  nav.main-menu{
+    width: 100%;
+    height: 50px;
+    display: block !important;
+  }
+  nav.main-menu ul{
+    max-width: 1180px;
+    width: 100%;
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+  }
+  nav.main-menu ul li{
+    padding-top: 0px;
+    display: block;
+    float: left;
+    width: auto;
+    height: 100%;
+    padding-top: 8px;
+  }
+   li.search{
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+  nav.main-menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto menu";
+    font-size: 14px;
+  }
+  nav.main-menu ul li a:hover{
+    color: #F14A58;
+  }
+}

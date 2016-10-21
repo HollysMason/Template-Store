@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section.banner{
+
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #E5E5E5;
+}
+a.item-link{
+  color: black;
+  text-decoration: none;
+}
+a.item-link:hover{
+  color: #F14A58;
+
+}
+a.nike-red{
+  display: block;
+  width: 100%;
+  height: auto;
+
+
+}
+a.bags,
+a.had-and-caps{
+  display: none;
+
+}
+
+@media screen and (min-width: 480px) {
+  a.nike-red{
+    width: 72%;
+    border: 1px solid #E8E8E8;
+  }
+  a.bags{
+    display: block;
+    width: 36%;
+    border: 1px solid #E8E8E8;
+  }
+  a.bags img{
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-width:1024px) {
+  a.nike-red{
+    width: 50%;
+    border: 1px solid #E8E8E8;
+  }
+  a.bags{
+    display: none;
+  }
+  a.had-and-caps{
+    display: block;
+    width: 50%;
+    border: 1px solid #E8E8E8;
+  }
+  a.had-and-caps img{
+    width: 100%;
+    height: auto;
+  }
+}
+/*_______________________________________________________________________________*/
+/*                                     new arrivals                             */
+/*_____________________________________________________________________________*/
+section.new-arrivals{
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+  background-color: white;
+}
+section.new-arrivals > article {
+    text-align: center;
+  padding-top: 13%;
+    padding-bottom: 5%;
+    font-size: 26px;
+    font-family: "Open Sans" Verdana;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+figure{
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+figcaption{
+  margin-top: 10px;
+  text-align: center;
+}
+.price{
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+figure > img{
+  width: 100%;
+  height: auto;
+}
+div.botton-all-arrivals{
+  padding-top: 11.7%;
+padding-bottom: 29%;
+}
+button.all-arrivals{
+  display: block;
+  outline: none;
+  background-color: white;
+  border: 1px solid black;
+  width: 60%;
+  height: 60px;
+  font-family: "Open Sans" Verdana;
+  font-size: 19px;
+  margin: 0 auto;
+}
+button.all-arrivals:hover{
+  color: white;
+  background-color: #707070;
+  cursor: pointer;
+}
+figcaption {
+    font-family: "Roboto" Verdana;
+    font-size: 13px;
+    padding-top: 15px;
+}
+span.price {
+    font-family: "Crimson", "Roboto menu";
+    margin-top: 9px;
+    font-size: 14px;
+}
+@media screen and (min-width:480px) {
+  section.new-arrivals{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+  }
+  section.new-arrivals > article {
+      text-align: center;
+      padding-top: 10%;
+      padding-bottom: 6.9%;
+      font-family: "Open Sans" , "Roboto";
+      font-size: 44px;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+  }
+  figure{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  figcaption{
+    margin-top: 10px;
+    text-align: center;
+    font-family: "Roboto",verdana;
+    font-size: 16px;
+    padding-top: 25px;
+  }
+
+  .price{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  figure > img{
+    width: 100%;
+    height: auto;
+  }
+  div.botton-all-arrivals{
+    padding-top: 8.7%;
+  padding-bottom: 18%;
+  }
+  button.all-arrivals{
+    display: block;
+    outline: none;
+    background-color: white;
+    border: 1px solid black;
+    width: 300px;
+    height: 69px;
+    font-family: "Open Sans", verdana;
+    font-size: 19px;
+    margin: 0 auto;
+  }
+  button.all-arrivals:hover{
+    color: white;
+    background-color: #707070;
+    cursor: pointer;
+  }
+  span.price {
+      font-family: "Crimson", verdana;
+      margin-top: 9px;
+      font-size: 14px;
+  }
+
+}
+@media screen and (min-width:1024px) {
+  section.new-arrivals{
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    background-color: white;
+  }
+  section.new-arrivals > article {
+      text-align: center;
+      padding-top: 9%;
+      padding-bottom: 5%;
+      font-size: 53px;
+      font-family: "Open Sans", verdana;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+  }
+  figure{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  figcaption{
+    margin-top: 0px;
+    text-align: center;
+    font-family: "Roboto", verdana;
+    font-size: 16px;
+    padding-top: 25px;
+  }
+
+  .price{
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  figure > img{
+    width: 100%;
+    height: auto;
+  }
+  div.botton-all-arrivals{
+    padding-top: 5%;
+  padding-bottom: 6.4%;
+  }
+  button.all-arrivals{
+    display: block;
+    outline: none;
+    background-color: white;
+    border: 1px solid black;
+    width: 335px;
+    height: 75px;
+    font-family: "Open Sans", "Roboto", Verdana;
+    font-size: 19px;
+    margin: 0 auto;
+  }
+  button.all-arrivals:hover{
+    color: white;
+    background-color: #707070;
+    cursor: pointer;
+  }
+
+  span.price {
+      font-family: "Crimson", Verdana;
+      margin-top: 9px;
+      font-size: 14px;
+  }
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Catalog</title>
+    <script src="js/common/jquery.js"></script>
+    <script src="js/common/jquery.mousewheel.min.js"></script>
+    <script data-main="js/catalog" src="js/common/require.js"></script>
+    <link rel="stylesheet" href="css/catalog.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/menu2.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/fonts.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/gridCatalog.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/footer.css" media="screen" title="no title" charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+    <body>
+    <header>
+      <div class="main-header">
+        <h1>
+          <a href="start.html" class="temp-desktop">Template</a>
+          <a href="start.html" class="temp-mobile">TL</a>
+        </h1>
+      <ul class="headerMenu">
+        <li class="Email">
+          <a href="#">E-mail</a>
+        </li>
+        <li class="signUp">
+          <a href="#">sing up</a>
+        </li>
+        <li class="bag">
+          <a href="shopping_bag.html">
+            <img src="img/bag.png" alt=""  class="bag-icon"/>
+            Bag
+            <span class="current-count-price"></span>
+            <span class="count-items"></span>
+          </a>
+        </li>
+      </ul>
+      <button class="toggle-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="close">&times;</span>
+      </button>
+      </div>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="catalog.html" class="Women">Women</a></li>
+          <li><a href="catalog.html" class="Men">Men</a></li>
+          <li><a href="catalog.html" class="Handbags">Handbags</a></li>
+          <li><a href="catalog.html" class="Accessories">Accessories</a></li>
+          <li><a href="catalog.html" class="Sale">Sale</a></li>
+          <li><a href="catalog.html" class="New-Arrivals">New&#160;Arrivals</a></li>
+          <li><a href="catalog.html" class="Clearance">Clearance</a></li>
+          <li><a href="catalog.html" class="StoreLocator">Store&#160;Locator</a></li>
+          <li class="search">
+            <input type="search" placeholder="Style Name" class="search">
+            <input type="button"  class="button-search">
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="filter">
+      <div class="filter-dradient">
+        <div class="green"></div>
+        <div class="blue">
+          <span class="toggle-filter mob"></span>
+        </div>
+      </div>
+    <section class="options">
+    <ul>
+      <li class="name-filter fashion">Fashion
+        <input type="image" src="img/dropdown/triangledrop.png" class="drop fashion"></input>
+        <span class="selected fashion"></span>
+      </li>
+      <li class="name-filter product-type">Product&nbsp;type
+        <input type="image" src="img/dropdown/triangledrop.png" class="drop product-type"></input>
+        <span class="selected product-type"></span>
+      </li>
+      <li class="name-filter color">Color
+        <input type="image" src="img/dropdown/triangledrop.png" class="drop color"></input>
+        <span class="selected color"></span>
+      </li>
+      <li class="name-filter brand">Brand
+        <input type="image" src="img/dropdown/triangledrop.png" class="drop brand"></input>
+        <span class="selected brand"></span>
+      </li>
+      <li class="name-filter size">Size
+        <input type="image" src="img/dropdown/triangledrop.png" class="drop size"></input>
+        <span class="selected size"></span>
+      </li>
+      <li class="name-filter price-range">Price&nbsp;range
+        <input type="image" src="img/dropdown/triangledrop.png" class="drop price-range"></input>
+        <span class="selected price-range"></span>
+      </li>
+    </ul>
+    <span class="toggle-filter tablet"></span>
+  </section>
+    <ul class="option-lists">
+        <article class="drug-and-select">Drug and select</article>
+        <li>
+          <h6>Fashion</h6>
+          <div class="area">
+            <ul class="droped-list fashion">
+              <li class="not-selected">Not Selected</li>
+              <li>Casual style</li>
+              <li>New Look</li>
+              <li>Vintage</li>
+              <li>Classic</li>
+              <li>Casual style</li>
+              <li>New Look</li>
+              <li>Vintage</li>
+              <li>Classic</li>
+            </ul>
+          </div>
+        </li>
+         <li>
+          <h6>Product&nbsp;type</h6>
+          <div class="area">
+          <ul class="droped-list product-type">
+            <li class="not-selected">Not Selected</li>
+            <li>Coats & Jackets</li>
+            <li>Dresses</li>
+            <li>Jerse</li>
+            <li>jacket</li>
+          </ul>
+          </div>
+        </li>
+        <li>
+          <h6>Color</h6>
+          <div class="area">
+          <ul class="droped-list color">
+            <li class="not-selected">Not Selected</li>
+            <li>Black</li>
+            <li>Blue</li>
+            <li>Red</li>
+            <li>Green</li>
+            <li>Gold</li>
+            <li>Rose</li>
+            <li>Pink</li>
+          </ul>
+        </div>
+        </li>
+        <li>
+          <h6>Brand</h6>
+          <div class="area">
+            <ul class="droped-list brand">
+            <li class="not-selected">Not Selected</li>
+            <li>Adidas</li>
+            <li>New Baklance</li>
+            <li>River Island</li>
+            <li>Nike</li>
+            <li>Stradivarius</li>
+            <li>Comme de Garson</li>
+          </ul>
+          </div>
+        </li>
+        <li>
+          <h6>Size</h6>
+          <div class="area">
+            <ul class="droped-list size">
+            <li class="not-selected">Not Selected</li>
+            <li>UL 18</li>
+            <li>UK 20</li>
+            <li>Uk 20L</li>
+            <li>UK 20s</li>
+            <li>UK 20XL</li>
+            <li>UK 18S</li>
+          </ul>
+          </div>
+        </li>
+        <li>
+          <h6>Price&nbsp;Range</h6>
+          <div class="area">
+            <ul class="droped-list price-range">
+            <li class="not-selected">Not Selected</li>
+            <li>To &#8356;99</li>
+            <li>&#8356;100-&#8356;99</li>
+            <li>From &#8356;300</li>
+            <li>From &#8356;500</li>
+            <li>&#8356;300-&#8356;600</li>
+          </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="row row-space">
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/only_skinny_jeans.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="#">Quick View</a>
+                  <a class="more-photo" href="#">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="#">Only Skinny jeans</a></h4>
+                <span class="price">&#8356;65.50</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/2catalog.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="inte4.html">Quick View</a>
+                  <a class="more-photo" href="inte4.html">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="inte4.html">Boyfriend T-Shirt with <br> Bohemian Print</a></h4>
+                <span class="price">&#8356;76.25</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-1 mobile">
+             <p class="catalog-banner">
+             Last weekend <strong>extra 50%</strong><br> off on all reduced boots and<br> shoulded
+             bags
+             <span class="discription-offer">
+               This offer is valid in store and online.Prices<br> displayed reflect this additional discount.
+               this<br> offer at 11:59 GMT on March 1st 2015
+             </span>
+           </p>
+         </div>
+         <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/neck_jumper.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="item2.html">Quick View</a>
+                  <a class="more-photo" href="item2.html">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="item2.html">Turtle Neck Jumper <br> in Rib</a></h4>
+                <span class="price">&#8356;130.25</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-1 tablet">
+             <p class="catalog-banner">
+             Last weekend <strong>extra 50%</strong><br> off on all reduced boots and<br> shoulded
+             bags
+           </p>
+             <span class="discription-offer">
+               This offer is valid in store and online.Prices<br> displayed reflect this additional discount.
+               This<br> offer at 11:59 GMT on March 1st 2015
+             </span>
+         </div>
+          <div class="col-1-2 col-1-3 col-1-4 " >
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/crochet.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="#">Quick View</a>
+                  <a class="more-photo" href="#">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="#">With Patchwork Crochet</a></h4>
+                <span class="price">&#8356;80.60</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-1 descktop">
+             <p class="catalog-banner">
+             Last weekend <strong>extra 50%</strong><br> off on all reduced boots and<br> shoulded
+             bags
+           </p>
+             <span class="discription-offer">
+               This offer is valid in store and online.Prices<br> displayed reflect this additional discount.
+               this<br> offer at 11:59 GMT on March 1st 2015
+             </span>
+          </div>
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/levis-catalog.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="#">Quick View</a>
+                  <a class="more-photo" href="#">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="#">Levi's Jeans for women</a></h4>
+                <span class="price">more colors</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/bohehemi.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="item3.html">Quick View</a>
+                  <a class="more-photo" href="item3.html">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link"href="item3.html">Boyfriend T-shirt with <br> Bohemian Print</a></h4>
+                <span class="price">&#8356;90.00</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/colorblock.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="item.html">Quick View</a>
+                  <a class="more-photo" href="item.html">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link"href="item.html">Colour Block</a></h4>
+                <span class="price">&#8356;550.50</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/monki.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="#">Quick View</a>
+                  <a class="more-photo" href="#">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="#">Monki Festival Knitted</a></h4>
+                <span class="price">&#8356;24.75</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/cardigan.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="#">Quick View</a>
+                  <a class="more-photo" href="#">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="#">Neck Knitted Jumper</a></h4>
+                <span class="price">&#8356;76.65</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/joesister.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="#">Quick View</a>
+                  <a class="more-photo" href="#">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="#">Neck Knitted Jumper</a></h4>
+                <span class="price">&#8356;76.65</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/blue.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="#">Quick View</a>
+                  <a class="more-photo" href="#">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="#">Neck Knitted Jumper</a></h4>
+                <span class="price">&#8356;76.65</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-1-2 col-1-3 col-1-4">
+            <figure>
+              <div class="effect">
+                <img src="img/catalog/boyfriendtshirt.png" alt="" />
+                <div class="caption">
+                  <a class="quick-view" href="#">Quick View</a>
+                  <a class="more-photo" href="#">More photo</a>
+                </div>
+              </div>
+              <figcaption>
+                <h4><a class="item-link" href="#">Neck Knitted Jumper</a></h4>
+                <span class="price">&#8356;76.65</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="show-more">
+      <button type="button" name="button">Show more</button>
+    </section>
+    <section class="banner">
+      <a href="#" class="adidas">
+        <img src="img/banner-catalog/adidas-catalog.png" alt="" />
+      </a>
+      <a href="#" class="levis">
+        <img src="img/banner-catalog/levis-catalog.png" alt="" />
+      </a>
+      <a href="#" class="bag">
+        <img src="img/banner-catalog/bag-catalog.png" alt="" />
+      </a>
+    </section>
+    <hr>
+    <footer>
+      <div class="container-footer">
+        <div class="links-and-care">
+          <section class="quick-links">
+            <h4 class="title">Quick Links</h4>
+            <ul>
+              <li><a href="#" class="foter_link">Store Locator</a></li>
+              <li><a href="#" class="foter_link">Gift cards</a></li>
+              <li><a href="#" class="foter_link">Size guide</a></li>
+              <li><a href="#" class="foter_link">About us</a></li>
+              <li><a href="#" class="foter_link">Support</a></li>
+            </ul>
+          </section>
+          <section class="customer-care">
+            <h4 class="title">Customer Care</h4>
+            <ul>
+              <li><a href="#" class="foter_link">Customer service</a></li>
+              <li><a href="#" class="foter_link">Track my order</a></li>
+              <li><a href="#" class="foter_link">Return policy</a></li>
+              <li><a href="#" class="foter_link">Shipping & delivery</a></li>
+              <li><a href="#" class="foter_link">Contact us</a></li>
+              <li><a href="#" class="foter_link">Careers</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="question-phone">
+          <div class="question">
+            <section class="questions-sec">
+              <h4 class="title">Questions</h4>
+              <p class="tweet">
+              <img src="img/networks/twetter_grey.png" alt="" />
+              Tweet us <span>@tamplate</span>
+              </p>
+              <p class="deliver">
+              We have own delivery service which <br> operates in 23 major Eouropean cites. Delivery <br> time - 3-5 days.
+              </p>
+            </section>
+          </div>
+          <div class="phone">
+            <section class="order-phone">
+              <h4 class="title">Order by phone</h4>
+              <span>8-800-409-47-12</span>
+            </section>
+            <section class="social">
+              <ul>
+                <li><a href="http://facebook.com"><img src="img/networks/facebook.png" alt="" /></a></li>
+                <li><a href="http://tweeter.com"><img src="img/networks/twitter.png" alt="" /></a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="privacy">
+        <section class="privacy-networks">
+          <ul>
+            <li><a href="#" class="foter_link">Legal&#160;notice</a></li>
+            <li><a href="#" class="foter_link">Privacy&#160;policy</a></li>
+            <li><a href="#" class="foter_link">Site&#160;map</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="copyright">
+        <section class="rights">
+          <span>&#9400;2010-2015, The Template Group inc.</span>
+        </section>
+        <section class="share">
+          <p>Share <span>1 431</span></p>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
